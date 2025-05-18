@@ -1,44 +1,15 @@
-# Project Responsive Web Design using Bootstrap
-## Date:19-05-2025
-
-## AIM:
-To create a simplified clone of Dribbble (https://dribbble.com/) landing page.
-
-
-## DESIGN STEPS:
-
-### Step 1:
-Clone the repository from GitHub.
-
-### Step 2:
-Create Django Admin project.
-
-### Step 3:
-Create a New App under the Django Admin project.
-
-### Step 4:
-Insert the necessary CSS and JavaScript files as external in order to use Bootstrap.
-
-### Step 5:
-Create a HTML file and include the needed Bootstrap components.
-
-### Step 6:
-Publish the website in the LocalHost.
-
-## PROGRAM :
-```
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Dribbble</title>
-    
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        
+        /* Custom styles */
         .navbar {
             background-color: black;
         }
@@ -131,7 +102,7 @@ Publish the website in the LocalHost.
             border-color: black;
         }
         
-        
+        /* Modal custom styles */
         .auth-modal .modal-content {
             border-radius: 10px;
             border: none;
@@ -169,7 +140,7 @@ Publish the website in the LocalHost.
     </style>
 </head>
 <body>
-   
+    <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#">
@@ -203,7 +174,7 @@ Publish the website in the LocalHost.
         </div>
     </nav>
 
-    
+    <!-- Sign In Modal -->
     <div class="modal fade auth-modal" id="signinModal" tabindex="-1" aria-labelledby="signinModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -236,7 +207,7 @@ Publish the website in the LocalHost.
         </div>
     </div>
 
-    
+    <!-- Sign Up Modal -->
     <div class="modal fade auth-modal" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -290,7 +261,7 @@ Publish the website in the LocalHost.
         </div>
     </div>
 
-    
+    <!-- Hero Section -->
     <section class="hero-section">
         <div class="container">
             <h1 class="display-4 fw-bold mb-4">Discover the world's top designers & creatives</h1>
@@ -300,7 +271,7 @@ Publish the website in the LocalHost.
         </div>
     </section>
 
-    
+    <!-- Popular Shots Section -->
     <section class="py-5">
         <div class="container">
             <h2 class="text-center section-title">Popular Shots</h2>
@@ -374,7 +345,7 @@ Publish the website in the LocalHost.
         </div>
     </section>
     
-    
+    <!-- Call to Action -->
     <section class="py-5">
         <div class="container text-center">
             <h2 class="mb-4">Ready to showcase your creative work?</h2>
@@ -383,7 +354,7 @@ Publish the website in the LocalHost.
         </div>
     </section>
 
-   
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
@@ -427,12 +398,12 @@ Publish the website in the LocalHost.
         </div>
     </footer>
 
-    
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
-    
+    <!-- Form Handling Script -->
     <script>
-        
+        // Sign In Form Handling
         document.getElementById('signinForm').addEventListener('submit', function(e) {
             e.preventDefault();
             const username = document.getElementById('signinUsername').value;
@@ -499,12 +470,3 @@ Publish the website in the LocalHost.
     </script>
 </body>
 </html>
-```
-## OUTPUT:
-![alt text](dhamini/dhamini/static/1.png)
-![alt text](dhamini/dhamini/static/2.png)
-![alt text](dhamini/dhamini/static/3.png)
-
-
-## RESULT:
-The Project for responsive web design using Bootstrap is completed successfully.
